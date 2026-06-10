@@ -1,0 +1,84 @@
+{
+  "config": {
+    "model_name": "vit_small_patch16_384",
+    "img_size": 384,
+    "prune_layers": [
+      3,
+      6,
+      9
+    ],
+    "keep_ratios": [
+      0.75,
+      0.5,
+      0.4
+    ],
+    "checkpoint": "/home/user/Desktop/vla_projects_archive/tools/tc-pruner/class_project/outputs/sota_pruned_small_atp_final/best.pt",
+    "best_acc_in_ckpt": 0.989
+  },
+  "params": {
+    "dense": 21815434,
+    "pruned": 23586058
+  },
+  "accuracy": {
+    "pruned_on": 0.9892,
+    "pruned_off": 0.99,
+    "num_patches": 576,
+    "kept_tokens_per_layer": [
+      {
+        "layer": 3,
+        "keep_ratio": 0.75,
+        "avg_kept_tokens": 432.0
+      },
+      {
+        "layer": 6,
+        "keep_ratio": 0.5,
+        "avg_kept_tokens": 216.0
+      },
+      {
+        "layer": 9,
+        "keep_ratio": 0.4,
+        "avg_kept_tokens": 87.0
+      }
+    ]
+  },
+  "gflops": {
+    "dense": 12.44939328,
+    "pruned": 9.323684352
+  },
+  "throughput": {
+    "dense": {
+      "1": {
+        "throughput_img_s": 145.41340695518196,
+        "latency_ms_per_img": 6.876944986979166,
+        "peak_vram_mb": 469.28076171875
+      },
+      "32": {
+        "throughput_img_s": 307.80413776195263,
+        "latency_ms_per_img": 3.2488192240397136,
+        "peak_vram_mb": 836.01318359375
+      },
+      "128": {
+        "throughput_img_s": 328.9241005897975,
+        "latency_ms_per_img": 3.0402150472005207,
+        "peak_vram_mb": 1971.70068359375
+      }
+    },
+    "pruned": {
+      "1": {
+        "throughput_img_s": 90.66113905229672,
+        "latency_ms_per_img": 11.030084228515625,
+        "peak_vram_mb": 719.32275390625
+      },
+      "32": {
+        "throughput_img_s": 430.65154862325795,
+        "latency_ms_per_img": 2.32206293741862,
+        "peak_vram_mb": 1188.46826171875
+      },
+      "128": {
+        "throughput_img_s": 445.638406574327,
+        "latency_ms_per_img": 2.2439717610677086,
+        "peak_vram_mb": 3382.76318359375
+      }
+    }
+  }
+}
