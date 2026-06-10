@@ -1,0 +1,29 @@
+{
+  "radar_points": 32969,
+  "point_match_rate": 0.7396645333495101,
+  "tracks": 200,
+  "track_match_rate": 0.505,
+  "matched_tracks": 101,
+  "dark_candidate_tracks": 99,
+  "dist_p50_m": 45.99693895907393,
+  "dist_p90_m": 105.70153045516506,
+  "bias_east_m": 5.540838760248059,
+  "bias_north_m": -21.498280289510507,
+  "bias_mag_m": 22.20083218200217,
+  "splits": {
+    "eligible_tracks": 89,
+    "train": 53,
+    "val": 17,
+    "test": 19,
+    "test_dark_pos": 9,
+    "test_neg": 10,
+    "unmatched_pool": 111
+  },
+  "gate_cfg": {
+    "dt_tol": 8.0,
+    "dist_gate": 300.0,
+    "ang_gate": 60.0,
+    "lam": 2.0,
+    "track_frac": 0.5
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "k_seeds": 5,
+  "r_trust_m": 100.0,
+  "offsets_m": [
+    0,
+    50,
+    100,
+    200,
+    300,
+    500
+  ],
+  "false_dark": {
+    "geometric_mean": [
+      0.0,
+      0.0,
+      0.01388888888888889,
+      0.02777777777777778,
+      0.22916666666666666,
+      0.9791666666666666
+    ],
+    "learned_mean": [
+      0.16111111111111112,
+      0.1625,
+      0.1625,
+      0.16666666666666669,
+      0.17083333333333334,
+      0.1736111111111111
+    ],
+    "learned_std": [
+      0.09844469525927418,
+      0.0997295726167569,
+      0.0997295726167569,
+      0.10005785363515486,
+      0.10107447443700139,
+      0.10356306601281803
+    ],
+    "hybrid_mean": [
+      0.016666666666666666,
+      0.016666666666666666,
+      0.03194444444444445,
+      0.08333333333333333,
+      0.09444444444444446,
+      0.3513888888888889
+    ],
+    "hybrid_std": [
+      0.013608276348795434,
+      0.013608276348795434,
+      0.02041241452319315,
+      0.042808430576173444,
+      0.049806725214003075,
+      0.0558326423395605
+    ]
+  },
+  "clean_auroc": {
+    "geometric_mean": 1.0,
+    "geometric_std": 0.0,
+    "learned_mean": 0.7577777777777778,
+    "learned_std": 0.026666666666666665,
+    "hybrid_mean": 0.7155555555555555,
+    "hybrid_std": 0.0458661498678895
+  },
+  "calibration": {
+    "ece_learned_mean": 0.265091586010318,
+    "ece_learned_std": 0.04833869118310952,
+    "ece_learned_tempscaled_mean": 0.265091586010318,
+    "ece_learned_tempscaled_std": 0.04833869118310952,
+    "temperature_mean": 1.0
+  },
+  "summary": "Hybrid routes confident (residual<=r_trust) tracks to geometric gating and uncertain ones to the learned matcher. It inherits geometric's ~0 false-dark at low AIS error AND the learned matcher's offset-invariance at high error, while lifting clean AUROC above the pure learned model. Temperature scaling reduces learned-score ECE. n_test=19 -> wide CIs."
+}

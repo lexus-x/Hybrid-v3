@@ -1,0 +1,13 @@
+{
+  "camera_dark_auroc_mean": 0.6747006537874396,
+  "camera_dark_auroc_std": 0.013207065644554702,
+  "all": [
+    0.6796333019516723,
+    0.6563220012225514,
+    0.693365103869517,
+    0.6806951871657755,
+    0.663487674727682
+  ],
+  "n_test": 774,
+  "note": "BONK camera arm: appearance crop <-> AIS-attribute open-set matching; controlled AIS-dropout dark labels; batch-negative contrastive; 5 seeds."
+}

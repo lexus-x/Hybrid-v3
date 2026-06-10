@@ -1,0 +1,22 @@
+{
+  "n_test": 19,
+  "n_dark": 9,
+  "learned": {
+    "auroc": 0.6777777777777777,
+    "auprc": 0.7337690631808279,
+    "auroc_ci95": [
+      0.380952380952381,
+      0.9222435897435897
+    ],
+    "ece": 0.30399648775399235
+  },
+  "geometric": {
+    "auroc": 1.0,
+    "auprc": 1.0,
+    "auroc_ci95": [
+      1.0,
+      1.0
+    ]
+  },
+  "takeaway": "On the CLEAN dropout split geometry is near-ideal (withholding removes its only in-gate match) so it can match/beat the learned model here; the learned model's advantage is the robustness regime (see busan_w4_robustness.json). n=19 -> wide CIs."
+}

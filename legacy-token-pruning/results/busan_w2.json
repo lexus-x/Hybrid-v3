@@ -1,0 +1,12 @@
+{
+  "train": {
+    "epoch": 149,
+    "train_loss": 0.7401040688787544,
+    "train_match_acc": 0.72
+  },
+  "n_test": 19,
+  "n_dark": 9,
+  "dark_auroc": 0.6444444444444445,
+  "dark_auprc": 0.747814277226042,
+  "note": "tiny-data PIPELINE SANITY (Busan ~89 tracks); scaled result needs the camera+AIS arm. Clean dropout split is easy for both geometric and learned matchers \u2014 the learned model's edge (noise/ambiguity robustness) is the W4 eval on the harder regime."
+}

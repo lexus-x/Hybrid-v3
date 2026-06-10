@@ -1,0 +1,50 @@
+{
+  "offsets_m": [
+    0,
+    50,
+    100,
+    200,
+    300,
+    500
+  ],
+  "rows": [
+    {
+      "offset_m": 0,
+      "learned_false_dark_rate": 0.08333333333333333,
+      "learned_mean_dark_score": 0.17568537068996193,
+      "geometric_false_dark_rate": 0.0
+    },
+    {
+      "offset_m": 50,
+      "learned_false_dark_rate": 0.08333333333333333,
+      "learned_mean_dark_score": 0.1755791478458851,
+      "geometric_false_dark_rate": 0.0
+    },
+    {
+      "offset_m": 100,
+      "learned_false_dark_rate": 0.08333333333333333,
+      "learned_mean_dark_score": 0.175165177581148,
+      "geometric_false_dark_rate": 0.013888888888888888
+    },
+    {
+      "offset_m": 200,
+      "learned_false_dark_rate": 0.08333333333333333,
+      "learned_mean_dark_score": 0.17230998375093362,
+      "geometric_false_dark_rate": 0.027777777777777776
+    },
+    {
+      "offset_m": 300,
+      "learned_false_dark_rate": 0.0763888888888889,
+      "learned_mean_dark_score": 0.16926164693521173,
+      "geometric_false_dark_rate": 0.22916666666666666
+    },
+    {
+      "offset_m": 500,
+      "learned_false_dark_rate": 0.0763888888888889,
+      "learned_mean_dark_score": 0.16732154155704393,
+      "geometric_false_dark_rate": 0.9791666666666666
+    }
+  ],
+  "n_tracks": 36,
+  "note": "False-dark rate (truth=AIS present) vs injected AIS registration offset. Geometric gating breaks near the 300m gate; learned matcher should stay lower."
+}

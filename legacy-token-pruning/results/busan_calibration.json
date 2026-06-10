@@ -1,0 +1,9 @@
+{
+  "n_test_pooled": 95,
+  "n_dark": 45,
+  "method": "5-fold cross-validated calibration on pooled multi-seed test (val split carries no dark labels under controlled dropout, so calibration is fit cross-validated on the labeled test pool).",
+  "ece_raw": 0.1944942781380776,
+  "ece_platt": 0.11517998081777385,
+  "ece_isotonic": 0.125270156490112,
+  "note_temperature": "Temperature scaling is identity here: with no labeled val set the optimal T defaults to 1.0, leaving ECE unchanged \u2014 which is why monotonic remapping (Platt/isotonic) is the right tool."
+}

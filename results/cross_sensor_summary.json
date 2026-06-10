@@ -1,0 +1,22 @@
+{
+  "cross_sensor_open_set_dark_detection": {
+    "radar_busan": {
+      "dark_auroc_mean": 0.7955555555555557,
+      "std": 0.04848316495393655,
+      "n_test": 19,
+      "seeds": 5
+    },
+    "camera_bonk": {
+      "dark_auroc_mean": 0.6747006537874396,
+      "std": 0.013207065644554702,
+      "n_test": 774,
+      "seeds": 5
+    },
+    "geometric_radar_clean_auroc": 1.0,
+    "robustness_500m_false_dark": {
+      "geometric": 0.9791666666666666,
+      "learned_mean": 0.21527777777777776
+    }
+  },
+  "takeaway": "Same open-set framework detects dark vessels on BOTH radar tracks and camera crops; radar arm additionally robust to AIS registration error where geometric gating collapses."
+}
